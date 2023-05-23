@@ -1,0 +1,38 @@
+strict digraph {
+  getBalance [color=yellow]
+  constructor
+  getItem [color=yellow]
+  getOrder [color=yellow]
+  AddedItem [shape=hexagon]
+  DuplicateItem [shape=hexagon]
+  addItem
+  SetWantToBuy [shape=hexagon]
+  ItemDoesntExist [shape=hexagon]
+  setWantToBuyForUser
+  ItemNotFound [shape=hexagon]
+  ItemRemoved [shape=hexagon]
+  removeItem
+  NotEnoughFundsSent [shape=hexagon]
+  RefundMade [shape=hexagon]
+  PartialRefundMade [shape=hexagon]
+  OrderIsPending [shape=hexagon]
+  DeletedItem [shape=hexagon]
+  receive [color=brown]
+  OrderNotFound [shape=hexagon]
+  SellerPaid [shape=hexagon]
+  tryToConfirm
+  sellerTryToConfirm
+  botTryToConfirm
+  DisputeOpened [shape=hexagon]
+  openDispute
+  FundsRefundedToBuyer [shape=hexagon]
+  resolveDisputeForBuyer
+  resolveDisputeForSeller
+  tryToConfirm -> OrderNotFound
+  sellerTryToConfirm -> tryToConfirm
+  botTryToConfirm -> tryToConfirm
+  openDispute -> OrderNotFound
+  resolveDisputeForBuyer -> OrderNotFound
+  resolveDisputeForSeller -> OrderNotFound
+}
+

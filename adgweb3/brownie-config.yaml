@@ -1,0 +1,19 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.8.3
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.8.3'
+dotenv: .env
+wallets:
+  account_owner: ${MUMBAI_PRIVATE_KEY_OWNER}
+  account1: ${MUMBAI_PRIVATE_KEY_1}
+
+live:
+  - name: Ethereum
+    networks:
+      - chainid: 3
+        explorer: https://api-testnet.polygonscan.com/
+        host: https://damp-wispy-tent.matic-testnet.discover.quiknode.pro/c5767ccfd3f93f015dfa64d8a5ad2c3776b03aaf/
+        id: matic_mumbai
+        name: matic_mumbai

@@ -1,0 +1,18 @@
+{
+  "local": {
+    "smartContractAddress": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+    "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+  },
+  "goerli": {
+    "smartContractAddress": "0x3BC09D7c49Ab65E20a744acB3240525f8C7e7d1B",
+    "caller": "0x726ab7CB9Ad545D27C7EBe06C9928a079e156A91"
+  },
+  "sepolia": {
+    "smartContractAddress": "0xA16bAaE2076e5dc8Bc7a3cC3f6A9904c197983b5",
+    "caller": "0x726ab7CB9Ad545D27C7EBe06C9928a079e156A91"
+  },
+  "mumbai": {
+    "smartContractAddress": "0x581C11a8fDfce2701D9b3E3D7D18552F175D847B",
+    "caller": "0x726ab7CB9Ad545D27C7EBe06C9928a079e156A91"
+  }
+}
